@@ -1,0 +1,116 @@
+body{font-size: 20px; font-family: 'Play', sans-serif; color: #6d6d6f; padding: 0; margin: 0;}
+.container {width: 87%; padding: 2% 2%;}
+
+h1 {text-transform: uppercase; font-size: 4.1vw; font-weight: bold;}
+h2 {color: #23262d;  text-transform: uppercase; font-weight: bold; text-align: center; padding: 27px 0; margin: 0;} 
+h3 {font-weight: 400; font-size: 3.1vw;}
+img {width: 100%; height: auto;}
+ul {list-style-type: none; padding-left: 0;}
+a {text-decoration: none;} 
+hr {margin: 15px 0;}
+
+#top-menu {background: #23262d;}
+#top-menu .navbar-light {padding: 10px 0;}
+#top-menu a  {color: #fff;} 
+#top-menu .col-lg-9 {padding: 0;} 
+#top-menu .col-lg-9 a {font-size: 24px;} 
+#top-menu .right {background:linear-gradient(135deg, transparent 15px, #de9e54 0);}
+#top-menu .col-lg-3 ul {margin-top: 8px;}
+#top-menu ul {margin: 0; padding-left: 12px;} 
+#top-menu ul li {display: inline-block; margin-left: 12px;} 
+#top-menu i {font-size: 32px; padding: 1px; color: #fff;} 
+#top-menu .col-lg-3 .fa-brands:hover {color: #de9e54;}
+#top-menu .hide-phone i {margin-left: 10px;}
+#top-menu .hide-phone:hover {color: #23262d;}
+#top-menu .hide-phone-2:hover {color: #23262d;}
+
+
+.carousel-caption {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    background: rgba(0, 0, 0, 0.582); 
+    height: auto; 
+    right: 40%; 
+    top: auto; 
+    bottom: 10%; 
+    left: 5%; 
+    padding: 30px; 
+    color: #fff; 
+    text-align: left;}
+.carousel-caption a {font-weight: 400; color: #fff;}
+.carousel-caption .btn-phone {
+    border: none; 
+    background:linear-gradient(135deg, transparent 15px, #de9e54 0); 
+    padding: 9px 20px; 
+    margin-top: 10px;}
+.carousel-caption p {font-size: 2.2vw;}
+.carousel-caption .btn-phone a {font-size: 26px;}
+.carousel-caption button a:hover {color: #23262d;}
+
+
+#gallery {padding: 0 40px;margin-top: 15px;}
+#gallery .nav-item {background: #23262d; margin: 0 20px 20px 0; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+#gallery .nav-item a {color: #fff;}
+#gallery .nav-item a:hover {color: #de9e54; }
+#gallery .nav-pills .nav-link {border-radius: 0; border: 0;}
+#gallery .nav {display: flex; justify-content: center; margin-bottom: 20px;} 
+#gallery .nav-item.active .nav-link,
+#gallery .nav-item .nav-link:active,
+#gallery .nav-item .nav-link:focus,
+#gallery .nav-item:hover .nav-link {color: #23262d; background-color: #de9e54;}
+#gallery .col-sm-3 {padding: 3px;}
+#gallery img {width: 100%; padding: 5px;}
+
+#video .col-lg-6, .col-lg-12 {margin-top: 20px;}
+#video .video {height: 300px;}
+#video i {margin-right: 8px; color: #de9e54; }
+#video .video iframe {margin-top: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+
+#text {background: #f6f5f1;}
+#text p {text-align: center; font-size: larger;} 
+#text .col-md-3 { color: #de9e54; font-weight: 700;}
+
+#contacts {color: red;}
+
+#footer {height: 80px; background: #23262d; color: red; font-size: 16px;}
+#footer .container {padding-bottom: 0;}
+
+@media screen and (max-width: 750px) {
+    .carousel-caption {
+      right: 5%;
+    }
+  }
+@media screen and (max-width: 650px) {
+    .slogan {
+      display: none;
+    }
+    .hide-phone, .hide-phone-2, .fa-phone-volume {
+      display: contents;
+    }
+  }  
+@media screen and (max-width: 610px) {
+    .carousel-caption .btn-phone a {
+      font-size: 20px;
+    }
+    .carousel-caption .btn-phone {
+      padding: 5px 15px 5px 25px;
+    }
+  }
+  @media screen and (min-width: 651px) {
+
+    .hide-phone, .hide-phone-2, .fa-phone-volume {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 477px) {
+    .hide-phone-2 {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 651px) {
+    .carousel-caption .btn-phone {
+      display: none;
+    }
+
+  }
