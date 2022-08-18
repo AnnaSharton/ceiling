@@ -112,5 +112,29 @@ hr {margin: 15px 0;}
     .carousel-caption .btn-phone {
       display: none;
     }
+  }
+  @media screen and (max-width: 800px) {
+    .carousel-caption p {
+      font-size: 26px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .carousel-caption p {
+      display: none;
+    }
+    .carousel-caption h3 {
+      font-size: 30px;
+    } 
+    .carousel-caption h1 {
+      font-size: 6vw;
+    } 
+  }
+  @media screen and (max-width: 400px) {
 
+    .carousel-caption h3 {
+      font-size: 24px;
+    } 
+    .carousel-caption {
+      top: 10%; 
+    }
   }
