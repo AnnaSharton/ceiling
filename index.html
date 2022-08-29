@@ -11,8 +11,7 @@
         <script src="https://kit.fontawesome.com/9111b32014.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
         <!-- <link rel="icon" href="favicon.ico"> -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--подключаю fancybox -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
         <title>Натяжные потолки</title>
@@ -42,10 +41,10 @@
         </div>
     </div>
 
-    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
 
-            <div class="carousel-item active"  data-interval="1000">
+            <div class="carousel-item active" >
                 <img src="images/carusel/3.jpg" class="d-block w-100" alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
@@ -56,7 +55,7 @@
             </div>
       
       
-            <div class="carousel-item"  data-interval="3000">
+            <div class="carousel-item" >
                 <img src="images/carusel/1.jpg" class="d-block w-100" alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
@@ -66,7 +65,7 @@
                 </div>
             </div>
       
-            <div class="carousel-item"  data-interval="3000">
+            <div class="carousel-item" >
                 <img src="images/carusel/2.jpg" class="d-block w-100" alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
@@ -76,7 +75,7 @@
                 </div>
             </div>
       
-            <div class="carousel-item"  data-interval="3000">
+            <div class="carousel-item" >
                 <img src="images/carusel/4.jpg" class="d-block w-100" alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
@@ -94,49 +93,128 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav nav-pills" role="tablist">
-                        <li class="nav-item active" data-filter="g"><a class="nav-link" role="tab" data-toggle="tab" href="#glossy">Глянцевый</a></li>
-                        <li class="nav-item" data-filter="m"><a class="nav-link" role="tab" data-toggle="tab" href="#matte">Матовый</a></li>
-                        <li class="nav-item" data-filter="t1"><a class="nav-link" role="tab" data-toggle="tab" href="#experience">Сатиновый</a></li>
-                        <li class="nav-item" data-filter="t1"><a class="nav-link" role="tab" data-toggle="tab" href="#111">Тканевый</a></li>
-                        <li class="nav-item" data-filter="t1"><a class="nav-link" role="tab" data-toggle="tab" href="#111">Многоуровневый</a></li>
-                        <li class="nav-item" data-filter="t1"><a class="nav-link" role="tab" data-toggle="tab" href="#222">Фотопечать</a></li>
-                        <li class="nav-item" data-filter="t1"><a class="nav-link" role="tab" data-toggle="tab" href="#222">Световые линии</a></li>
+                        <li class="nav-item active" data-filter="m"><a class="nav-link" role="tab" data-toggle="tab" href="#matte">Матовый</a></li>
+                        <li class="nav-item" data-filter="sl"><a class="nav-link" role="tab" data-toggle="tab" href="#lines">Световые линии</a></li>
+                        <li class="nav-item" data-filter="g"><a class="nav-link" role="tab" data-toggle="tab" href="#glossy">Глянцевый</a></li>
+                        <li class="nav-item" data-filter="sat"><a class="nav-link" role="tab" data-toggle="tab" href="#satin">Сатиновый</a></li>
+                        <li class="nav-item" data-filter="t"><a class="nav-link" role="tab" data-toggle="tab" href="#textile">Тканевый</a></li>
+                        <li class="nav-item" data-filter="l"><a class="nav-link" role="tab" data-toggle="tab" href="#level">Многоуровневый</a></li>
+                        <li class="nav-item" data-filter="f"><a class="nav-link" role="tab" data-toggle="tab" href="#fotoprint">Фотопечать</a></li>
+                        
                     </ul>
                 </div>
             </div>
 
 
         <div class="tab-content">
-            <!----------------------------------------------------ГЛЯНЦЕВЫЙ КАРУСЕЛЬ---------------------------------------------------------------->
-            <div class="tab-pane active" role="tabpanel" id="glossy"> 
+
+            <!----------------------------------------------------МАТОВЫЙ КАРУСЕЛЬ---------------------------------------------------------------->
+            <div class="tab-pane active" role="tabpanel" id="matte"> 
                 <div class="row">
-                <div class="col-sm-3"><a href="images/gallery/g-1.jpg"  data-fancybox="gallery"><img src="images/gallery/g-1.jpg" alt="Глянцевый потолок"></a></div>
-                <div class="col-sm-3"><a href="images/gallery/g-2.jpg"  data-fancybox="gallery"><img src="images/gallery/g-2.jpg" alt="Глянцевый потолок"></a></div>
-                <div class="col-sm-3"><a href="images/gallery/g-3.jpg"  data-fancybox="gallery"><img src="images/gallery/g-3.jpg" alt="Глянцевый потолок"></a></div>
-                <div class="col-sm-3"><a href="images/gallery/g-4.jpg"  data-fancybox="gallery"><img src="images/gallery/g-4.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/1-tagaev.jpg"  data-fancybox="m"><img src="images/gallery/matte/1-tagaev.jpg" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/2-tagaev.jpg"  data-fancybox="m"><img src="images/gallery/matte/2-tagaev.jpg" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/3-tagaev.jpg"  data-fancybox="m"><img src="images/gallery/matte/3-tagaev.jpg" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/4-tagaev.jpg"  data-fancybox="m"><img src="images/gallery/matte/4-tagaev.jpg" alt="Матовый потолок"></a></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3"><a href="images/gallery/g-5.jpg"  data-fancybox="gallery"><img src="images/gallery/g-5.jpg" alt="Глянцевый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/g-6.jpg"  data-fancybox="gallery"><img src="images/gallery/g-6.jpg" alt="Глянцевый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/g-7.jpg"  data-fancybox="gallery"><img src="images/gallery/g-7.jpg" alt="Глянцевый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/g-8.jpg"  data-fancybox="gallery"><img src="images/gallery/g-8.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/5-our.jfif"  data-fancybox="m"><img src="images/gallery/matte/5-our.jfif" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/6-our.jfif"  data-fancybox="m"><img src="images/gallery/matte/6-our.jfif" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/7-our.jpg"  data-fancybox="m"><img src="images/gallery/matte/7-our.jpg" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/matte/8-our.jpg"  data-fancybox="m"><img src="images/gallery/matte/8-our.jpg" alt="Матовый потолок"></a></div>
+                </div>
+            </div>
+            <!----------------------------------------------------СВЕТОВЫЕ ЛИНИИ---------------------------------------------------------------->
+            <div class="tab-pane" role="tabpanel" id="lines"> 
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/lines/3.jpg"  data-fancybox="sl"><img src="images/gallery/lines/3.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/2.jpg"  data-fancybox="sl"><img src="images/gallery/lines/2.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/1.jpg"  data-fancybox="sl"><img src="images/gallery/lines/1.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/4.jpg"  data-fancybox="sl"><img src="images/gallery/lines/4.jpg" alt="Световые линии"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/lines/5.jpg"  data-fancybox="sl"><img src="images/gallery/lines/5.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/6.jpg"  data-fancybox="sl"><img src="images/gallery/lines/6.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/7.jpg"  data-fancybox="sl"><img src="images/gallery/lines/7.jpg" alt="Световые линии"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/lines/8.jpg"  data-fancybox="sl"><img src="images/gallery/lines/8.jpg" alt="Световые линии"></a></div>
+                </div>
+            </div>
+            <!----------------------------------------------------ГЛЯНЦЕВЫЙ КАРУСЕЛЬ---------------------------------------------------------------->
+            <div class="tab-pane" role="tabpanel" id="glossy"> 
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-1.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-1.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-2.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-2.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-3.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-3.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-4.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-4.jpg" alt="Глянцевый потолок"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-5.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-5.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-6.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-6.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-7.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-7.jpg" alt="Глянцевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/glossy/g-8.jpg"  data-fancybox="g"><img src="images/gallery/glossy/g-8.jpg" alt="Глянцевый потолок"></a></div>
                 </div>
             </div> 
-            <!----------------------------------------------------МАТОВЫЙ КАРУСЕЛЬ---------------------------------------------------------------->
-            <div class="tab-pane" role="tabpanel" id="matte"> 
+            <!----------------------------------------------------САТИНОВЫЙ---------------------------------------------------------------->
+            <div class="tab-pane" role="tabpanel" id="satin"> 
                 <div class="row">
-                    <div class="col-sm-3"><a href="images/gallery/matte/1.jpg"  data-fancybox="gallery"><img src="images/gallery/matte/1.jpg" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/2-our.jpg"  data-fancybox="gallery"><img src="images/gallery/matte/2-our.jpg" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/3.jpg"  data-fancybox="gallery"><img src="images/gallery/matte/3.jpg" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/4-our.jfif"  data-fancybox="gallery"><img src="images/gallery/matte/4-our.jfif" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/1.jpg"  data-fancybox="sat"><img src="images/gallery/satin/1.jpg" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/2.png"  data-fancybox="sat"><img src="images/gallery/satin/2.png" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/3.jpg"  data-fancybox="sat"><img src="images/gallery/satin/3.jpg" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/4.jpg"  data-fancybox="sat"><img src="images/gallery/satin/4.jpg" alt="Сатиновый потолок"></a></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-3"><a href="images/gallery/matte/5-our.jfif"  data-fancybox="gallery"><img src="images/gallery/matte/5-our.jfif" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/6-our.jfif"  data-fancybox="gallery"><img src="images/gallery/matte/6-our.jfif" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/7-our.jpg"  data-fancybox="gallery"><img src="images/gallery/matte/7-our.jpg" alt="Матовый потолок"></a></div>
-                    <div class="col-sm-3"><a href="images/gallery/matte/8-our.jpg"  data-fancybox="gallery"><img src="images/gallery/matte/8-our.jpg" alt="Матовый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/5.jpg"  data-fancybox="sat"><img src="images/gallery/satin/5.jpg" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/6.jpg"  data-fancybox="sat"><img src="images/gallery/satin/6.jpg" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/7.jpg"  data-fancybox="sat"><img src="images/gallery/satin/7.jpg" alt="Сатиновый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/satin/8.jpg"  data-fancybox="sat"><img src="images/gallery/satin/8.jpg" alt="Сатиновый потолок"></a></div>
                 </div>
-            </div>  
+            </div> 
+            <!----------------------------------------------------ТКАНЕВЫЙ---------------------------------------------------------------->
+            <div class="tab-pane" role="tabpanel" id="textile"> 
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/textile/1.jpg"  data-fancybox="t"><img src="images/gallery/textile/1.jpg" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/2.jpg"  data-fancybox="t"><img src="images/gallery/textile/2.jpg" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/3.jpg"  data-fancybox="t"><img src="images/gallery/textile/3.jpg" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/4.jpeg"  data-fancybox="t"><img src="images/gallery/textile/4.jpeg" alt="Тканевый потолок"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/textile/5.jpeg"  data-fancybox="t"><img src="images/gallery/textile/5.jpeg" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/6.jfif"  data-fancybox="t"><img src="images/gallery/textile/6.jfif" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/7.jpg"  data-fancybox="t"><img src="images/gallery/textile/7.jpg" alt="Тканевый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/textile/8.jpg"  data-fancybox="t"><img src="images/gallery/textile/8.jpg" alt="Тканевый потолок"></a></div>
+                </div>
+            </div> 
+            <!----------------------------------------------------МНОГОУРОВНЕВЫЙ---------------------------------------------------------------->
+            <div class="tab-pane" role="tabpanel" id="level"> 
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/level/1.jpg"  data-fancybox="l"><img src="images/gallery/level/1.jpg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/2.jpg"  data-fancybox="l"><img src="images/gallery/level/2.jpg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/3.jpeg"  data-fancybox="l"><img src="images/gallery/level/3.jpeg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/4.jpg"  data-fancybox="l"><img src="images/gallery/level/4.jpg" alt="Многоуровневый потолок"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/level/5.jpg"  data-fancybox="l"><img src="images/gallery/level/5.jpg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/6.jpg"  data-fancybox="l"><img src="images/gallery/level/6.jpg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/7.jpg"  data-fancybox="l"><img src="images/gallery/level/7.jpg" alt="Многоуровневый потолок"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/level/8.jpeg"  data-fancybox="l"><img src="images/gallery/level/8.jpeg" alt="Многоуровневый потолок"></a></div>
+                </div>
+            </div>
+             <!----------------------------------------------------ФОТОПЕЧАТЬ---------------------------------------------------------------->
+             <div class="tab-pane" role="tabpanel" id="fotoprint"> 
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/1.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/1.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/2.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/2.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/3.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/3.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/4.png"  data-fancybox="f"><img src="images/gallery/fotoprint/4.png" alt="Фотопечать"></a></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/5.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/5.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/6.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/6.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/7.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/7.jpg" alt="Фотопечать"></a></div>
+                    <div class="col-sm-3"><a href="images/gallery/fotoprint/8.jpg"  data-fancybox="f"><img src="images/gallery/fotoprint/8.jpg" alt="Фотопечать"></a></div>
+                </div>
+            </div>
+              
+
         </div>
    
     </div> 
