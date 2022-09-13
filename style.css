@@ -63,16 +63,32 @@ hr {margin: 15px 0;}
 #video .col-lg-6, .col-lg-12 {margin-top: 20px;}
 #video .video {height: 300px;}
 #video i {margin-right: 8px; color: #de9e54; }
-#video .video iframe {margin-top: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+#video .video iframe {margin-top: 10px; 
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+}
 
 #text {background: #f6f5f1;}
 #text p {text-align: center; font-size: larger;} 
 #text .col-md-3 { color: #de9e54; font-weight: 700;}
 
-#contacts {color: red;}
+#contacts .working-hours {font-size: 25px; text-align: center;}
+#contacts span {font-weight: 700;}
+#contacts a {white-space: nowrap; color: #de9e54;}
+#contacts a:hover {color: #23262d;}
+#contacts h4 {text-align: center; font-size: 2.5vw; text-transform: uppercase;}
+#contacts h4 span {font-weight: 700;}
 
-#footer {height: 80px; background: #23262d; color: red; font-size: 16px;}
-#footer .container {padding-bottom: 0; margin-bottom: 0;}
+.conditions {background:linear-gradient(135deg, transparent 15px, #f6f5f1 0);line-height: 2; padding: 30px 10px 5px 10px;}
+.conditions i {font-size: 60px; color: #de9e54;}
+.conditions p {margin-top: 15px;}
+.guarantee {margin: 25px 0;}  
+
+
+#footer {background: #23262d; font-size: 14px; color: #fff; font-size: 16px;}
+#footer a {color: #fff;}
+#footer .container {display:flex; justify-content: space-between; padding: 20px;}
+
+#back-to-top {cursor: pointer; position: fixed; bottom: 20px; left: 20px; color: white; background: #fa9a2d; border: none; display: none;} 
 
 @media screen and (max-width: 750px) {
     .carousel-caption {
@@ -136,5 +152,10 @@ hr {margin: 15px 0;}
     } 
     .carousel-caption {
       top: 10%; 
+    }
+  }
+  @media screen and (max-width: 1216px) and (min-width: 992px) {
+    .conditions {
+      height: 256px;
     }
   }

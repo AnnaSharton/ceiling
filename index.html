@@ -56,7 +56,7 @@
       
       
             <div class="carousel-item" >
-                <img src="images/carusel/1.jpg" class="d-block w-100" alt="натяжной потолок">
+                <img src="images/carusel/2.jpg" class="d-block w-100"  alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
                     <h3>г.Калининград</h3><br>
@@ -66,7 +66,7 @@
             </div>
       
             <div class="carousel-item" >
-                <img src="images/carusel/2.jpg" class="d-block w-100" alt="натяжной потолок">
+                <img src="images/carusel/1.jpg" class="d-block w-100" alt="натяжной потолок">
                 <div class="carousel-caption">
                     <h1>Натяжные потолки высокого качества</h1>
                     <h3>г.Калининград</h3><br>
@@ -277,7 +277,7 @@
             <hr>
             <div class="row">  
                 <div class="col-md-3">Световые линии</div> 
-                <div class="col-md-9" style="color: red;">НАПИШИ СЮДА ТЕКСТ </div>
+                <div class="col-md-9">Актуальны с точки зрения тенденций дизайна интерьеров. Световые линии дают четкую геометрию, смотрятся сдержанно и лаконично. Именно это соответствует интерьерным трендам.</div>
             </div>   
             <hr>
             <div class="row">  
@@ -290,32 +290,92 @@
 
     <div class="container" id="contacts">
         <h2>Как с нами связаться</h2>
+
         <div class="row">
-            <div class="col-lg-6">
-                <p>Позвоните нам по любому вопросу..... мы работаем с до .....</p>
-                <p>адрес? карта нужна?</p>
-                <p>два номера телефона тут будут и оформить блок как то, Серега напиши сюда что надо</p>
-            </div>
-            <div class="col-lg-6">
-                <p>Гарантия качества!</p>
-                <p>заключаем договр! и т д и тп </p>
-            </div>
+            <div class="col-lg-12 working-hours">
+                <p><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;&nbsp;&nbsp;Мы работаем с <span>9.00 </span>до <span>19.00</span></p>
+                <p><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Телефоны для связи:&nbsp;&nbsp;
+                    <a href="tel:+79118654465">&nbsp;8-911-865-44-65</a>, 
+                    <a href="tel:+79114519322">&nbsp;8-911-451-93-22</a></p> 
+                    <p><i class="fa-solid fa-location-dot"></i></i>&nbsp;&nbsp;&nbsp;&nbsp;г. Калининград, Калининградская область</p>
+
+            </div>  
         </div>
+   
+            <div class="row  guarantee"> 
+                <div class="col-lg-3 col-sm-6 text-center my-2">
+                    <div class="conditions">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <p>Заключение<br>договора</p>
+                    </div>
+                </div>   
+                <div class="col-lg-3 col-sm-6 text-center my-2">
+                    <div class="conditions">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <p>Гарантия от<br>производителя 10 лет</p>
+                    </div>
+                </div>       
+                <div class="col-lg-3 col-sm-6 text-center my-2">
+                    <div class="conditions">
+                        <i class="fa-solid fa-people-robbery"></i>
+                        <p>Индивидуальный<br>подход</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-center my-2"> 
+                    <div class="conditions">
+                        <i class="fa-solid fa-image"></i>
+                        <p>Визуализация<br>интерьера</p>
+                    </div>
+                </div>     
+                    
+        </div>
+                 <h4>Р.S. Дочитал до конца, <span>проси скидку!!!</span></h4>
+        
+    
+   
     </div>
 
     <div class="container-fluid" id="footer">
         <div class="container">
-            <p>тут в подвале принято писать название фирмы и можно еще раз продублировать телефон или написать почту</p> 
+            <div class="info-lending">
+                <a href="mailto:xxxxxxxxxxxxxx">mymail@example.com</a><br>
+                <a href="#">propotolki39.ru</a> 
+            </div>
+            <div class="footer-contacts">
+                <a href="tel:+79118654465">8-911-865-44-65</a><br>
+                <a href="tel:+79114519322">8-911-451-93-22</a>
+            </div>
         </div>
     </div>   
 
-         
-
+    <!-- Back to top BUTTON-->    
+    <a id="back-to-top" href="#" class="btn shadow-none" role="button" title="Вверх">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--подключаю fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script> 
+        $(document).ready(function(){
+                 $(window).scroll(function () {
+                   if ($(this).scrollTop() > 200) {
+                       $('#back-to-top').fadeIn(); // тут указывается селектор кнопки
+                   } else {
+                       $('#back-to-top').fadeOut();
+                   }
+                 });
+                 //scroll body to 0px on click
+                 $('#back-to-top').click(function () {
+    
+                       $('body,html').animate({
+    
+                            scrollTop: 0
+                       }, 800);
+                       return false;
+                 });
+               });  
+       </script>
 </body>
 </html>
