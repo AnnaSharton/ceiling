@@ -41,7 +41,7 @@
         </div>
     </div>
 
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="3000" data-bs-ride="carousel">
         <div class="carousel-inner">
 
             <div class="carousel-item active" >
@@ -360,7 +360,7 @@
     <script> 
         $(document).ready(function(){
                  $(window).scroll(function () {
-                   if ($(this).scrollTop() > 200) {
+                   if ($(this).scrollTop() > 300) {
                        $('#back-to-top').fadeIn(); // тут указывается селектор кнопки
                    } else {
                        $('#back-to-top').fadeOut();
@@ -377,5 +377,6 @@
                  });
                });  
        </script>
+    
 </body>
 </html>
