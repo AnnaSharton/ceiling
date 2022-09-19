@@ -87,6 +87,7 @@ hr {margin: 15px 0;}
 #footer {background: #23262d; font-size: 14px; color: #fff; font-size: 16px;}
 #footer a {color: #fff;}
 #footer .container {display:flex; justify-content: space-between; padding: 20px;}
+#footer .info-lending {text-align: end;}
 
 #back-to-top {cursor: pointer; position: fixed; bottom: 20px; left: 20px; color: white; background: #fa9a2d; border: none; display: none;} 
 
@@ -158,4 +159,20 @@ hr {margin: 15px 0;}
     .conditions {
       height: 256px;
     }
+  }
+
+  @media screen and (max-width: 754px) {
+    #contacts h4  {
+      font-size: 6vw;
+    }
+  }
+
+  
+  @media screen and (max-width: 754px) {
+    .footer-contacts  {
+      display: none;
+    }
+    #footer .container {
+      display:flex; justify-content: end;
+    } 
   }
